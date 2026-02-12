@@ -198,7 +198,7 @@
         .portrait-frame {
             width: 100%;
             height: 800px;
-            background-image: url('/Users/Vijay/Documents/chef.jpg');
+            background-image: url('../chef.jpg');
             background-size: cover;
             background-position: center;
             position: relative;
