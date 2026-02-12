@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Fork | Modern Restaurant & Café</title>
+    <meta name="description" content="Experience fine dining at Velvet Fork, where taste meets comfort. Modern restaurant with signature dishes and curated dining experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Accessibility: Skip to content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Loading screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="container nav-container">
+            <a href="#" class="logo">Velvet<span>Fork</span></a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="chef.html" class="nav-link">Chef's</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content" id="main-content">
+            <h1 class="restaurant-name">Velvet Fork</h1>
+            <p class="tagline">Where Taste Meets Comfort</p>
+            <div class="cta-buttons">
+                <a href="#menu" class="btn btn-filled">Explore Menu</a>
+                <a href="#contact" class="btn">Reserve a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <div class="welcome-content">
+                <h2 class="section-heading">A Culinary Experience Like No Other</h2>
+                <div class="welcome-text">
+                    <p>Nestled in the heart of the city, Velvet Fork offers an unforgettable dining experience that combines modern culinary techniques with time-honored traditions. Our philosophy is simple: source the finest ingredients, respect the craft, and create dishes that tell a story.</p>
+                    <p>Our chefs draw inspiration from global cuisines while staying true to our commitment to seasonal, locally-sourced produce. Every plate is a work of art, designed to delight both the palate and the eye.</p>
+                    <p>At Velvet Fork, we believe dining is not just about nourishment, but about creating memories. From the moment you enter our doors, you'll be immersed in an atmosphere of warmth, elegance, and exceptional service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Divider -->
+    <div class="divider-container">
+        <div class="animated-divider"></div>
+    </div>
+
+    <!-- Signature Dishes Section -->
+    <section class="signature-section" id="menu">
+        <div class="container">
+            <div class="signature-content">
+                <h2 class="section-heading signature-heading">Signature Creations</h2>
+                
+                <div class="dish-item" id="dish1">
+                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80');"></div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">Truffle-Infused Wild Mushroom Risotto</h3>
+                        <p class="dish-desc">Carnaroli rice slowly cooked with wild foraged mushrooms, finished with white truffle oil and Parmigiano-Reggiano. A symphony of earthy flavors that embodies the essence of Italian culinary tradition with a modern twist.</p>
+                    </div>
+                </div>
+                
+                <div class="dish-item" id="dish2">
+                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">Herb-Crusted Rack of Lamb</h3>
+                        <p class="dish-desc">New Zealand lamb encrusted with rosemary, thyme, and Dijon mustard, served with roasted baby vegetables and a red wine reduction. Tender, flavorful, and expertly prepared to highlight the natural qualities of premium lamb.</p>
+                    </div>
+                </div>
+                
+                <div class="dish-item" id="dish3">
+                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80');"></div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">Chocolate Soufflé with Gold Leaf</h3>
+                        <p class="dish-desc">An airy dark chocolate soufflé with a molten center, dusted with edible gold leaf and served with a side of vanilla bean ice cream. The perfect balance of richness and lightness to conclude your dining experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ambiance Section -->
+    <section class="ambiance-section">
+        <div class="ambiance-overlay"></div>
+        <div class="container">
+            <div class="ambiance-content">
+                <h2 class="section-heading">An Atmosphere of Refined Comfort</h2>
+                <div class="ambiance-text">
+                    <p>Velvet Fork's interior was designed by award-winning architect Elena Rossi, who envisioned a space that balances contemporary elegance with timeless warmth. The dining room features custom-made furniture, ambient lighting, and curated art pieces that create an intimate yet sophisticated atmosphere.</p>
+                    <p>Our commitment to sustainability extends beyond our menu to our restaurant's design. We use reclaimed wood, energy-efficient lighting, and locally-crafted decor elements to minimize our environmental footprint while maximizing aesthetic appeal.</p>
+                </div>
+                
+                <div class="highlight-text">
+                    Dining at Velvet Fork is not merely a meal—it's a journey through flavors, textures, and emotions that will linger in your memory long after the last bite.
+                </div>
+                
+                <div class="ambiance-text">
+                    <p>Whether you're celebrating a special occasion, conducting a business dinner, or simply enjoying a night out, our staff is dedicated to providing impeccable service that anticipates your needs without intruding on your experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <div class="container">
+            <h2 class="section-heading events-heading">Curated Experiences</h2>
+            <div class="events-container">
+                <div class="event-item">
+                    <h3 class="event-title">Wine Pairing Dinners</h3>
+                    <div class="event-date">Every Thursday Evening</div>
+                    <p class="event-desc">Join our sommelier for an exclusive five-course menu expertly paired with rare vintages from boutique vineyards around the world. Limited to 20 guests for an intimate experience.</p>
+                </div>
+                
+                <div class="event-item">
+                    <h3 class="event-title">Chef's Table</h3>
+                    <div class="event-date">Friday & Saturday Nights</div>
+                    <p class="event-desc">Experience culinary theater at our exclusive chef's counter with a front-row seat to kitchen artistry. Enjoy a personalized tasting menu with commentary from our executive chef.</p>
+                </div>
+                
+                <div class="event-item">
+                    <h3 class="event-title">Sunday Jazz Brunch</h3>
+                    <div class="event-date">Sundays 11AM - 3PM</div>
+                    <p class="event-desc">Relax to the sounds of live jazz while enjoying our signature brunch menu featuring both classic favorites and innovative creations, complete with bottomless mimosas or craft cocktails.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonial-slider">
+                <div class="testimonial active" id="testimonial1">
+                    <div class="testimonial-text">"The most exceptional dining experience I've had this year. Each course was a revelation, and the service was impeccable without being intrusive. Velvet Fork has set a new standard for fine dining in the city."</div>
+                    <div class="testimonial-author">— James Peterson, Food Critic</div>
+                </div>
+                
+                <div class="testimonial" id="testimonial2">
+                    <div class="testimonial-text">"We celebrated our anniversary at Velvet Fork, and it was absolutely magical. From the personalized menu to the thoughtful touches throughout the evening, every detail was perfect. We'll definitely be back."</div>
+                    <div class="testimonial-author">— Sarah & Michael Chen</div>
+                </div>
+                
+                <div class="testimonial" id="testimonial3">
+                    <div class="testimonial-text">"As a chef myself, I'm rarely impressed when dining out. But Velvet Fork exceeded all expectations. The technical precision combined with creative flair in every dish was truly remarkable."</div>
+                    <div class="testimonial-author">— Chef Antonio Rossi</div>
+                </div>
+                
+                <div class="testimonial-dots">
+                    <button class="dot active" data-slide="0" aria-label="Show testimonial 1"></button>
+                    <button class="dot" data-slide="1" aria-label="Show testimonial 2"></button>
+                    <button class="dot" data-slide="2" aria-label="Show testimonial 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Preview -->
+    <section class="contact-preview" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-heading contact-heading">Experience Velvet Fork</h2>
+                <p class="contact-subheading">We invite you to join us for an unforgettable culinary journey. Reservations are recommended to ensure your preferred dining time.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail">Velvet Fork<br>University Road, Rajkot, 360002</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-detail">+91 1975864258<br>Reservations & Inquiries</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-detail">Tue-Thu: 5PM - 10PM<br>Fri-Sun: 5PM - 11PM<br>Monday: Closed</div>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="btn btn-filled">Make a Reservation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Divider -->
+    <div class="divider-container">
+        <div class="animated-divider"></div>
+    </div>
+
+    <!-- Discover Section -->
+    <section class="discover-section">
+        <div class="container">
+            <p class="discover-text">Continue Your Journey</p>
+            <button class="scroll-indicator" id="scrollIndicator" aria-label="Scroll to welcome section"></button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Velvet<span>Fork</span></div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <p>Velvet Fork Restaurant © 2023 | Crafted with passion for those who appreciate the art of fine dining</p>
+            <p style="margin-top: 10px; font-size: 12px;">Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VelvetFork | Contact & Reservations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Velvet<span>Fork</span></a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span>☰</span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="chef.html">Our Chef</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="contact-container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="header-image"></div>
+            <h1 class="page-title">Contact & Reservations</h1>
+            <p class="page-subtitle">We'd love to welcome you</p>
+            <div class="page-divider"></div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2 class="form-title">Make a Reservation</h2>
+                    
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="fullName" 
+                                class="form-input" 
+                                placeholder="Enter your full name"
+                                required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                class="form-input" 
+                                placeholder="your.email@example.com"
+                                required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                class="form-input" 
+                                placeholder="(555) 123-4567">
+                        </div>
+                        
+                        <div class="form-group datetime-group">
+                            <div>
+                                <label for="date" class="form-label">Preferred Date *</label>
+                                <input 
+                                    type="date" 
+                                    id="date" 
+                                    class="form-input"
+                                    required>
+                            </div>
+                            
+                            <div>
+                                <label for="time" class="form-label">Preferred Time *</label>
+                                <select id="time" class="form-select" required>
+                                    <option value="">Select time</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="17:30">5:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests" class="form-label">Number of Guests *</label>
+                            <select id="guests" class="form-select" required>
+                                <option value="">Select number</option>
+                                <option value="1">1 person</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                                <option value="5">5 people</option>
+                                <option value="6">6 people</option>
+                                <option value="7">7+ people</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notes" class="form-label">Special Requests or Notes</label>
+                            <textarea 
+                                id="notes" 
+                                class="form-textarea" 
+                                placeholder="Please let us know about any dietary restrictions, allergies, or special occasions..."
+                                rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Reserve a Table</button>
+                    </form>
+                    
+                    <!-- Success Message (Hidden by default) -->
+                    <div class="success-message" id="successMessage">
+                        <span class="success-icon">✓</span>
+                        <strong>Thank you for your reservation request!</strong> Our team will contact you within 24 hours to confirm your booking.
+                    </div>
+                </div>
+                
+                <!-- Info Panel -->
+                <div class="info-panel">
+                    <h2 class="info-title">Contact Information</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-heading">
+                            <span class="info-icon">📍</span>
+                            Location
+                        </div>
+                        <p class="info-text">
+                            123 Gourmet Avenue<br>
+                            Metropolis, MP 10101<br>
+                            United States
+                        </p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-heading">
+                            <span class="info-icon">📞</span>
+                            Phone
+                        </div>
+                        <p class="info-text">
+                            <a href="tel:1975864258" class="info-link">+91 1975864258</a><br>
+                            <small>For reservations and inquiries</small>
+                        </p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-heading">
+                            <span class="info-icon">✉️</span>
+                            Email
+                        </div>
+                        <p class="info-text">
+                            <a href="mailto:reservations@velvetfork.com" class="info-link">reservations@velvetfork.com</a><br>
+                            <a href="mailto:info@velvetfork.com" class="info-link">info@velvetfork.com</a>
+                        </p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-heading">
+                            <span class="info-icon">⏰</span>
+                            Opening Hours
+                        </div>
+                        <div class="hours-grid">
+
+                            
+                            <div class="hours-day">Monday - Saturday</div>
+                            <div class="hours-time">5:00 PM - 9:00 PM</div>
+                            
+                            <div class="hours-day">Sunday</div>
+                            <div class="hours-time">5:00 PM - 11:00 PM</div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-heading">
+                            <span class="info-icon">💡</span>
+                            Additional Information
+                        </div>
+                        <p class="info-text">
+                            • For parties of 6 or more, please call directly<br>
+                            • Dress code: Smart casual<br>
+                            • Valet parking available<br>
+                            • Wheelchair accessible
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <h2 class="map-title">Find Us</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-text">
+                        <div class="map-address">VelvetFork, University Road, Rajkot, 360002</div>
+                        <p class="map-note">Located in the heart of downtown, easily accessible by public transport with valet parking available.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="page-footer">
+            <p>VelvetFork Restaurant • Contact & Reservations</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">For urgent inquiries, please call us directly at (555) 123-4567</p>
+            <p style="margin-top: 5px; font-size: 0.85rem;">We recommend booking at least one week in advance for weekend reservations</p>
+        </div>
+    </div>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>

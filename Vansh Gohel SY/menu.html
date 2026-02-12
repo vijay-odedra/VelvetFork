@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VelvetFork | Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Velvet<span>Fork</span></a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span>☰</span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="chef.html">Chef's</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Menu Content -->
+    <div class="menu-container">
+        <div class="menu-header" style="
+    background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80');
+">
+            <h1 class="menu-title">VelvetFork Menu</h1>
+            <p class="menu-subtitle">Curated Culinary Excellence</p>
+            <div class="menu-divider"></div>
+        </div>
+
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="starters">Starters</button>
+            <button class="category-tab" data-category="main-course">Main Course</button>
+            <button class="category-tab" data-category="desserts">Desserts</button>
+            <button class="category-tab" data-category="beverages">Beverages</button>
+            <button class="category-tab" data-category="tasting">Tasting Menu</button>
+        </div>
+
+        <!-- Starters Category -->
+        <div class="menu-category active" id="starters">
+            <div class="category-header">
+                <h2 class="category-name">Starters</h2>
+                <p class="category-description">Delicate beginnings to awaken the palate and set the tone for the culinary journey ahead.</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Heirloom Tomato & Burrata</h3>
+                        <span class="item-price">₹1,200</span>
+                    </div>
+                    <p class="item-description">House-made burrata, heritage tomatoes, basil oil, aged balsamic reduction.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Foie Gras Torchon</h3>
+                        <span class="item-price">₹2,500</span>
+                    </div>
+                    <p class="item-description">Hand-torched foie gras, toasted brioche, fig compote, pink peppercorn.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Scallop Crudo</h3>
+                        <span class="item-price">₹1,800</span>
+                    </div>
+                    <p class="item-description">Day-boat scallops, yuzu kosho, cucumber, radish, crispy shallots.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Truffle Arancini</h3>
+                        <span class="item-price">₹1,400</span>
+                    </div>
+                    <p class="item-description">Black truffle-infused risotto balls, Parmigiano-Reggiano, saffron aioli.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Hamachi Tiradito</h3>
+                        <span class="item-price">₹1,900</span>
+                    </div>
+                    <p class="item-description">Yellowtail, leche de tigre, avocado, pickled onion, cilantro.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Wild Mushroom Tart</h3>
+                        <span class="item-price">₹1,400</span>
+                    </div>
+                    <p class="item-description">Foraged mushrooms, caramelized onion, gruyère, thyme.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Lobster Bisque</h3>
+                        <span class="item-price">₹2,000</span>
+                    </div>
+                    <p class="item-description">Atlantic lobster, cognac cream, lobster coral oil, chive.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Beef Tartare</h3>
+                        <span class="item-price">₹1,800</span>
+                    </div>
+                    <p class="item-description">Prime beef, quail egg, cornichons, dijon, toasted baguette.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Course Category -->
+        <div class="menu-category" id="main-course">
+            <div class="category-header">
+                <h2 class="category-name">Main Course</h2>
+                <p class="category-description">Centrepiece creations showcasing technique, seasonality, and balanced complexity.</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Herb-Crusted Rack of Lamb</h3>
+                        <span class="item-price">₹3,800</span>
+                    </div>
+                    <p class="item-description">New Zealand lamb, rosemary-thyme crust, ratatouille, red wine jus.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Miyazaki A5 Wagyu Striploin</h3>
+                        <span class="item-price">₹9,500</span>
+                    </div>
+                    <p class="item-description">Japanese A5 wagyu, smoked potato purée, bone marrow butter, seasonal vegetables.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Atlantic Halibut</h3>
+                        <span class="item-price">₹3,200</span>
+                    </div>
+                    <p class="item-description">Pan-seared halibut, saffron fennel, lemon beurre blanc, fingerling potatoes.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Wild Mushroom Risotto</h3>
+                        <span class="item-price">₹2,800</span>
+                    </div>
+                    <p class="item-description">Carnaroli rice, foraged mushrooms, white truffle oil, Parmigiano-Reggiano.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Duck Breast à l'Orange</h3>
+                        <span class="item-price">₹3,800</span>
+                    </div>
+                    <p class="item-description">Confit duck leg, blood orange gastrique, fondant potato, broccolini.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Lobster Thermidor</h3>
+                        <span class="item-price">₹5,500</span>
+                    </div>
+                    <p class="item-description">Atlantic lobster, brandy cream sauce, gruyère gratin, herb butter rice.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Venison Loin</h3>
+                        <span class="item-price">₹4,200</span>
+                    </div>
+                    <p class="item-description">New Zealand venison, juniper berry sauce, celery root purée, roasted beets.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Turbot en Papillote</h3>
+                        <span class="item-price">₹3,800</span>
+                    </div>
+                    <p class="item-description">Line-caught turbot, lemon verbena, summer vegetables, white wine broth.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts Category -->
+        <div class="menu-category" id="desserts">
+            <div class="category-header">
+                <h2 class="category-name">Desserts</h2>
+                <p class="category-description">Sweet conclusions crafted with precision and artistry to complete your experience.</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Valrhona Chocolate Soufflé</h3>
+                        <span class="item-price">₹1,200</span>
+                    </div>
+                    <p class="item-description">70% dark chocolate soufflé, crème anglaise, gold leaf, vanilla bean ice cream.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Crème Brûlée Trio</h3>
+                        <span class="item-price">₹1,100</span>
+                    </div>
+                    <p class="item-description">Vanilla bean, lavender honey, and matcha green tea crème brûlée.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Seasonal Fruit Tart</h3>
+                        <span class="item-price">₹1,000</span>
+                    </div>
+                    <p class="item-description">Almond frangipane, pastry cream, market fruits, mint sugar.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Pistachio Baklava</h3>
+                        <span class="item-price">₹1,100</span>
+                    </div>
+                    <p class="item-description">House-made phyllo, Iranian pistachios, orange blossom syrup, cardamom cream.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Passionfruit Pavlova</h3>
+                        <span class="item-price">₹1,200</span>
+                    </div>
+                    <p class="item-description">Meringue, passionfruit curd, tropical fruits, coconut cream.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Salted Caramel Pot de Crème</h3>
+                        <span class="item-price">₹1,100</span>
+                    </div>
+                    <p class="item-description">Silken custard, fleur de sel, caramelized white chocolate, hazelnut tuile.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beverages Category -->
+        <div class="menu-category" id="beverages">
+            <div class="category-header">
+                <h2 class="category-name">Beverages</h2>
+                <p class="category-description">Carefully selected pairings and refreshing accompaniments for your dining experience.</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">VelvetFork Signature Cocktails</h3>
+                        <span class="item-price">₹1,200</span>
+                    </div>
+                    <p class="item-description">Ask your server for today's specialty creations from our master mixologist.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">French 75</h3>
+                        <span class="item-price">₹1,400</span>
+                    </div>
+                    <p class="item-description">Gin, lemon juice, simple syrup, champagne, lemon twist.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Old World Wines</h3>
+                        <span class="item-price">₹1,100</span>
+                    </div>
+                    <p class="item-description">Extensive selection of French, Italian, and Spanish wines by the glass or bottle.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Artisanal Coffee Selection</h3>
+                        <span class="item-price">₹450</span>
+                    </div>
+                    <p class="item-description">Single-origin espresso, pour-over, and traditional preparations.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Herbal Infusions</h3>
+                        <span class="item-price">₹500</span>
+                    </div>
+                    <p class="item-description">Seasonal loose-leaf teas and handcrafted herbal blends.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Non-Alcoholic Pairings</h3>
+                        <span class="item-price">₹1,800</span>
+                    </div>
+                    <p class="item-description">Four-course beverage pairing of house-made elixirs and infusions.</p>
+                </div>
+            </div>
+
+            <!-- Wine Section -->
+            <div class="wine-section">
+                <div class="wine-category">
+                    <h3>White Wines by the Glass</h3>
+                    <div class="tasting-item">
+                        <span class="tasting-name">Sancerre, Domaine Vacheron</span>
+                        <span class="tasting-price">₹1,495</span>
+                    </div>
+                    <div class="tasting-item">
+                        <span class="tasting-name">Chablis 1er Cru, Domaine Laroche</span>
+                        <span class="tasting-price">₹1,990</span>
+                    </div>
+                    <div class="tasting-item">
+                        <span class="tasting-name">Albariño, Pazo de Señorans</span>
+                        <span class="tasting-price">₹1,330</span>
+                    </div>
+                </div>
+                
+                <div class="wine-category">
+                    <h3>Red Wines by the Glass</h3>
+                    <div class="tasting-item">
+                        <span class="tasting-name">Châteauneuf-du-Pape, Château de Beaucastel</span>
+                        <span class="tasting-price">₹2,650</span>
+                    </div>
+                    <div class="tasting-item">
+                        <span class="tasting-name">Barolo, Giacomo Conterno</span>
+                        <span class="tasting-price">₹2,650</span>
+                    </div>
+                    <div class="tasting-item">
+                        <span class="tasting-name">Napa Valley Cabernet, Opus One</span>
+                        <span class="tasting-price">₹2,050</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tasting Menu Category -->
+        <div class="menu-category" id="tasting">
+            <div class="category-header">
+                <h2 class="category-name">Chef's Tasting Menu</h2>
+                <p class="category-description">An exclusive culinary journey curated by our Executive Chef, showcasing the season's finest ingredients.</p>
+            </div>
+            
+            <div class="tasting-menu">
+                <div class="tasting-item">
+                    <span class="tasting-name">Amuse-Bouche</span>
+                    <span class="tasting-price">Market Selection</span>
+                </div>
+                <div class="tasting-item">
+                    <span class="tasting-name">Hamachi Tiradito</span>
+                    <span class="tasting-price">Leche de Tigre, Avocado, Pickled Onion</span>
+                </div>
+                <div class="tasting-item">
+                    <span class="tasting-name">Foie Gras Torchon</span>
+                    <span class="tasting-price">Fig Compote, Toasted Brioche</span>
+                </div>
+                <div class="tasting-item">
+                    <span class="tasting-name">Wild Mushroom Risotto</span>
+                    <span class="tasting-price">White Truffle, Parmigiano-Reggiano</span>
+                </div>
+                <div class="tasting-item">
+                    <span class="tasting-name">Miyazaki A5 Wagyu</span>
+                    <span class="tasting-price">Bone Marrow Butter, Seasonal Vegetables</span>
+                </div>
+                <div class="tasting-item">
+                    <span class="tasting-name">Valrhona Chocolate Soufflé</span>
+                    <span class="tasting-price">Crème Anglaise, Gold Leaf</span>
+                </div>
+                <div class="tasting-item">
+                    <span class="tasting-name">Petits Fours</span>
+                    <span class="tasting-price">Chef's Selection</span>
+                </div>
+                
+                <div class="category-divider"></div>
+                
+                <div class="tasting-item">
+                    <span class="tasting-name" style="font-size: 1.3rem;">Seven-Course Tasting Menu</span>
+                    <span class="tasting-price" style="font-size: 1.3rem; color: var(--cream);">₹16,185</span>
+                </div>
+                <div class="tasting-item">
+                    <span class="tasting-name">With Wine Pairings</span>
+                    <span class="tasting-price">₹24,485</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Section -->
+        <div class="special-section">
+            <h3 class="special-title">Vegetarian & Dietary Options</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Heritage Beet Salad</h3>
+                        <span class="item-price">₹1,300</span>
+                    </div>
+                    <p class="item-description">Rainbow beets, goat cheese, pistachio, beetroot reduction, microgreens.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Truffle Wild Mushroom Risotto</h3>
+                        <span class="item-price">₹2,800</span>
+                    </div>
+                    <p class="item-description">Carnaroli rice, foraged mushrooms, white truffle oil, Parmigiano-Reggiano.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Artichoke & White Bean Cassoulet</h3>
+                        <span class="item-price">₹2,400</span>
+                    </div>
+                    <p class="item-description">Baby artichokes, white beans, roasted garlic, herb breadcrumbs.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Cauliflower Steak</h3>
+                        <span class="item-price">₹2,200</span>
+                    </div>
+                    <p class="item-description">Roasted cauliflower, romesco sauce, pine nuts, golden raisins.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reservation CTA -->
+        <div class="reservation-cta">
+            <p style="font-size: 1.2rem; color: var(--light-gold); margin-bottom: 15px;">Experience the VelvetFork Journey</p>
+            <p style="margin-bottom: 20px;">For special dietary requests or large party reservations, please contact us directly.</p>
+            <a href="#reservations" class="reservation-btn">Reserve Your Table</a>
+        </div>
+
+        <!-- Menu Footer -->
+        <div class="menu-footnote">
+            <p>Our menu changes seasonally to showcase the finest ingredients at their peak.</p>
+            <p>Please inform your server of any dietary restrictions or allergies.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">*Prices are per person and subject to change | **18% service charge added to parties of 6 or more</p>
+        </div>
+    </div>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>

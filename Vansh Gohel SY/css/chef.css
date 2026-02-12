@@ -1,0 +1,722 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --charcoal: #1a1a1a;
+            --dark-charcoal: #0f0f0f;
+            --cream: #f8f5f0;
+            --muted-gold: #b89d74;
+            --light-gold: #d4c5ab;
+            --soft-divider: rgba(184, 157, 116, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--cream);
+            background-color: var(--charcoal);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--soft-divider);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--cream);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--muted-gold);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--muted-gold);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--muted-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--cream);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        /* Main Content */
+        .chef-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 150px 40px 120px;
+        }
+
+        /* Page Header */
+        .page-header {
+            padding: 120px 40px;
+             background-size: cover;
+            background-position: center;
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .page-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 26, 26, 0.6);
+}
+
+.page-header > * {
+    position: relative;
+    z-index: 1;
+}
+
+        .page-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4.5rem;
+            font-weight: 400;
+            color: var(--cream);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            line-height: 1.1;
+        }
+
+        .page-subtitle {
+            font-size: 1.3rem;
+            color: var(--muted-gold);
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .page-divider {
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--muted-gold), transparent);
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-divider::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, var(--cream), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* Chef Profile Section */
+        .chef-section {
+            margin: 100px 0;
+        }
+
+        .chef-profile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .chef-image {
+            position: relative;
+        }
+
+        .portrait-frame {
+            width: 100%;
+            height: 800px;
+            background-image: url('/Users/Vijay/Documents/chef.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .portrait-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(26, 26, 26, 0.15) 0%,
+        rgba(26, 26, 26, 0.35) 100%
+    );
+}
+
+        .chef-details {
+            padding: 40px 0;
+        }
+
+        .chef-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            color: var(--cream);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .chef-name::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 80px;
+            height: 1px;
+            background-color: var(--muted-gold);
+        }
+
+        .chef-experience {
+            font-size: 1.2rem;
+            color: var(--muted-gold);
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        .chef-description {
+            font-size: 1.1rem;
+            color: var(--light-gold);
+            line-height: 1.8;
+            margin-bottom: 50px;
+        }
+
+        .chef-description p {
+            margin-bottom: 25px;
+        }
+
+        .chef-quote {
+            padding: 40px 0;
+            border-top: 1px solid var(--soft-divider);
+            border-bottom: 1px solid var(--soft-divider);
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .quote-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--cream);
+            line-height: 1.6;
+            font-style: italic;
+            font-weight: 300;
+            position: relative;
+            padding: 0 40px;
+        }
+
+        .quote-text::before,
+        .quote-text::after {
+            content: '"';
+            position: absolute;
+            font-size: 4rem;
+            color: var(--muted-gold);
+            opacity: 0.3;
+            line-height: 1;
+        }
+
+        .quote-text::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .quote-text::after {
+            bottom: -30px;
+            right: 0;
+        }
+
+        /* Philosophy Section */
+        .philosophy-section {
+            margin: 120px 0;
+            padding: 80px 0;
+            border-top: 1px solid var(--soft-divider);
+            border-bottom: 1px solid var(--soft-divider);
+        }
+
+        .philosophy-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .philosophy-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--muted-gold);
+            margin-bottom: 40px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .philosophy-text {
+            font-size: 1.1rem;
+            color: var(--light-gold);
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .philosophy-text p {
+            margin-bottom: 25px;
+        }
+
+        /* Journey Section */
+        .journey-section {
+            margin: 100px 0;
+        }
+
+        .journey-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .journey-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--muted-gold);
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .journey-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .journey-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--soft-divider);
+        }
+
+        .journey-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .journey-year {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            color: var(--muted-gold);
+            font-weight: 500;
+            min-width: 100px;
+            margin-right: 40px;
+        }
+
+        .journey-detail {
+            flex: 1;
+        }
+
+        .journey-role {
+            font-size: 1.3rem;
+            color: var(--cream);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .journey-location {
+            font-size: 1rem;
+            color: var(--muted-gold);
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+
+        .journey-description {
+            font-size: 1rem;
+            color: var(--light-gold);
+            line-height: 1.6;
+        }
+
+        /* Signature Dish Section */
+        .signature-section {
+            margin: 120px 0;
+        }
+
+        .signature-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .signature-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--muted-gold);
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .signature-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .dish-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            color: var(--cream);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .dish-description {
+            font-size: 1.1rem;
+            color: var(--light-gold);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .dish-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: var(--cream);
+            line-height: 1.6;
+            font-style: italic;
+            margin-top: 40px;
+            padding: 30px 0;
+            border-top: 1px solid var(--soft-divider);
+            border-bottom: 1px solid var(--soft-divider);
+        }
+
+        /* Contact CTA */
+        .contact-cta {
+            text-align: center;
+            margin-top: 120px;
+            padding: 80px 40px;
+        }
+
+        .cta-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--cream);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            color: var(--light-gold);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 16px 48px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            color: var(--cream);
+            background-color: transparent;
+            border: 1px solid var(--muted-gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-button:hover {
+            background-color: var(--muted-gold);
+            color: var(--charcoal);
+        }
+
+        /* Footer */
+        .page-footer {
+            text-align: center;
+            margin-top: 100px;
+            padding-top: 40px;
+            border-top: 1px solid var(--soft-divider);
+            color: var(--light-gold);
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .nav-container,
+            .chef-container {
+                padding: 0 30px;
+            }
+            
+            .chef-container {
+                padding: 140px 30px 100px;
+            }
+            
+            .page-title {
+                font-size: 3.8rem;
+            }
+            
+            .chef-profile {
+                gap: 60px;
+            }
+            
+            .portrait-frame {
+                height: 700px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links.active {
+                display: flex;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--charcoal);
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 0;
+                gap: 25px;
+                border-bottom: 1px solid var(--soft-divider);
+            }
+            
+            .chef-profile {
+                grid-template-columns: 1fr;
+                gap: 60px;
+                max-width: 600px;
+            }
+            
+            .portrait-frame {
+                height: 700px;
+            }
+            
+            .chef-name {
+                font-size: 3rem;
+            }
+            
+            .journey-item {
+                flex-direction: column;
+            }
+            
+            .journey-year {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container,
+            .chef-container {
+                padding: 0 20px;
+            }
+            
+            .chef-container {
+                padding: 120px 20px 80px;
+            }
+            
+            .page-title {
+                font-size: 3rem;
+            }
+            
+            .page-subtitle {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+            }
+            
+            .chef-name {
+                font-size: 2.5rem;
+            }
+            
+            .quote-text {
+                font-size: 1.6rem;
+                padding: 0 30px;
+            }
+            
+            .philosophy-title,
+            .journey-title,
+            .signature-title,
+            .cta-title {
+                font-size: 2rem;
+            }
+            
+            .contact-cta {
+                padding: 60px 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-title {
+                font-size: 2.5rem;
+            }
+            
+            .chef-section {
+                margin: 60px 0;
+            }
+            
+            .chef-name {
+                font-size: 2.2rem;
+            }
+            
+            .chef-experience {
+                font-size: 1.1rem;
+            }
+            
+            .chef-description {
+                font-size: 1rem;
+            }
+            
+            .quote-text {
+                font-size: 1.4rem;
+                padding: 0 20px;
+            }
+            
+            .quote-text::before,
+            .quote-text::after {
+                font-size: 3rem;
+            }
+            
+            .philosophy-section {
+                margin: 80px 0;
+                padding: 60px 0;
+            }
+            
+            .journey-section,
+            .signature-section {
+                margin: 80px 0;
+            }
+            
+            .contact-cta {
+                margin-top: 80px;
+                padding: 40px 20px;
+            }
+            
+            .cta-button {
+                padding: 14px 36px;
+                font-size: 1.1rem;
+            }
+            
+            .page-footer {
+                margin-top: 60px;
+                padding-top: 30px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .nav-container,
+            .chef-container {
+                padding: 0 15px;
+            }
+            
+            .chef-container {
+                padding: 100px 15px 60px;
+            }
+            
+            .page-title {
+                font-size: 2.2rem;
+            }
+            
+            .page-subtitle {
+                font-size: 1rem;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .portrait-frame {
+                height: 700px;
+            }
+            
+            .chef-name {
+                font-size: 2rem;
+            }
+            
+            .quote-text {
+                font-size: 1.2rem;
+                padding: 0 15px;
+            }
+        }
+
+        /* Reduce motion for accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            .page-divider::after {
+                animation: none;
+            }
+            
+            .cta-button:hover {
+                transform: none;
+            }
+        }
